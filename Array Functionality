@@ -1,0 +1,9 @@
+int[][] array = {{5,3,2},{4,5,6},{4,6,7}};
+		
+  Arrays.sort(array, new Comparator<int[]>(){
+    public int compare (int[] o1, int[] o2) {
+      if (((Integer) o1[0]).compareTo(o2[0]) == 0)
+        return (((Integer)o1[1]).compareTo(o2[1]));
+      return ((Integer) o1[0]).compareTo(o2[0]);
+    }
+  });
